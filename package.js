@@ -1,6 +1,6 @@
 Package.describe({
     name: 'frenchbread:swagger',
-    version: '0.0.20',
+    version: '0.0.21',
     summary: 'Javascript library to connect to swagger-enabled APIs via browser.',
     git: 'https://github.com/frenchbread/meteor-swagger.git',
     documentation: 'README.md'
@@ -8,7 +8,7 @@ Package.describe({
 
 Package.onUse(function(api) {
     api.versionsFrom('1.1.0.2');
-    api.use([
+    api.addFiles([
         'client/lib/swagger/lib/jquery-1.8.0.min.js',
         'client/lib/swagger/lib/jquery.wiggle.min.js',
         'client/lib/swagger/lib/jquery.slideto.min.js',
@@ -18,10 +18,8 @@ Package.onUse(function(api) {
         'client/lib/swagger/lib/backbone-min.js',
         'client/lib/swagger/lib/handlebars-2.0.0.js',
         'client/lib/swagger/lib/highlight.7.3.pack.js',
+        'client/lib/swagger/swagger-ui.js',
         'client/lib/swagger/lib/swagger-oauth.js'
-    ]);
-    api.addFiles([
-        'client/lib/swagger/swagger-ui.js'
     ], 'client');
-    api.export('SwaggerUi', 'client');
+    api.export(['SwaggerUi', 'SwaggerClient'], 'client');
 });
