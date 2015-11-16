@@ -1,6 +1,6 @@
 Package.describe({
     name: 'frenchbread:swagger',
-    version: '0.0.21',
+    version: '0.0.24',
     summary: 'Javascript library to connect to swagger-enabled APIs via browser.',
     git: 'https://github.com/frenchbread/meteor-swagger.git',
     documentation: 'README.md'
