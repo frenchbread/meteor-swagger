@@ -1,12 +1,8 @@
 Package.describe({
     name: 'frenchbread:swagger',
-    version: '0.0.17',
-    // Brief, one-line summary of the package.
+    version: '0.0.19',
     summary: 'Javascript library to connect to swagger-enabled APIs via browser.',
-    // URL to the Git repository containing the source code for this package.
     git: 'https://github.com/frenchbread/meteor-swagger.git',
-    // By default, Meteor will default to using README.md for documentation.
-    // To avoid submitting documentation, set this field to null.
     documentation: 'README.md'
 });
 
@@ -25,4 +21,5 @@ Package.onUse(function(api) {
         'client/lib/swagger/swagger-ui.js',
         'client/lib/swagger/lib/swagger-oauth.js'
     ], 'client');
+    api.export('SwaggerUi', 'client');
 });
