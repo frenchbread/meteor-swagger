@@ -1,6 +1,6 @@
 Package.describe({
     name: 'frenchbread:swagger',
-    version: '0.0.13',
+    version: '0.0.14',
     // Brief, one-line summary of the package.
     summary: 'Javascript library to connect to swagger-enabled APIs via browser.',
     // URL to the Git repository containing the source code for this package.
